@@ -1,0 +1,283 @@
+{
+  "total_records": 20640,
+  "total_features": 8,
+  "target_column": "MedHouseVal",
+  "target_multiplier": 100000,
+  "feature_names": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "summary_statistics": {
+    "MedInc": {
+      "mean": 3.871,
+      "std": 1.9,
+      "min": 0.5,
+      "p25": 2.563,
+      "median": 3.535,
+      "p75": 4.743,
+      "max": 15.0,
+      "corr_with_target": 0.688
+    },
+    "HouseAge": {
+      "mean": 28.639,
+      "std": 12.586,
+      "min": 1.0,
+      "p25": 18.0,
+      "median": 29.0,
+      "p75": 37.0,
+      "max": 52.0,
+      "corr_with_target": 0.106
+    },
+    "AveRooms": {
+      "mean": 5.429,
+      "std": 2.474,
+      "min": 0.846,
+      "p25": 4.441,
+      "median": 5.229,
+      "p75": 6.052,
+      "max": 141.909,
+      "corr_with_target": 0.152
+    },
+    "AveBedrms": {
+      "mean": 1.097,
+      "std": 0.474,
+      "min": 0.333,
+      "p25": 1.006,
+      "median": 1.049,
+      "p75": 1.1,
+      "max": 34.067,
+      "corr_with_target": -0.047
+    },
+    "Population": {
+      "mean": 1425.477,
+      "std": 1132.462,
+      "min": 3.0,
+      "p25": 787.0,
+      "median": 1166.0,
+      "p75": 1725.0,
+      "max": 35682.0,
+      "corr_with_target": -0.025
+    },
+    "AveOccup": {
+      "mean": 3.071,
+      "std": 10.386,
+      "min": 0.692,
+      "p25": 2.43,
+      "median": 2.818,
+      "p75": 3.282,
+      "max": 1243.333,
+      "corr_with_target": -0.024
+    },
+    "Latitude": {
+      "mean": 35.632,
+      "std": 2.136,
+      "min": 32.54,
+      "p25": 33.93,
+      "median": 34.26,
+      "p75": 37.71,
+      "max": 41.95,
+      "corr_with_target": -0.144
+    },
+    "Longitude": {
+      "mean": -119.57,
+      "std": 2.004,
+      "min": -124.35,
+      "p25": -121.8,
+      "median": -118.49,
+      "p75": -118.01,
+      "max": -114.31,
+      "corr_with_target": -0.046
+    },
+    "MedHouseVal": {
+      "mean": 2.069,
+      "std": 1.154,
+      "min": 0.15,
+      "p25": 1.196,
+      "median": 1.797,
+      "p75": 2.647,
+      "max": 5.0,
+      "corr_with_target": 1.0
+    }
+  },
+  "price_distribution": [
+    {
+      "range": "$14k - $55k",
+      "count": 444,
+      "min_val": 14999.0,
+      "max_val": 55416.0
+    },
+    {
+      "range": "$55k - $95k",
+      "count": 2800,
+      "min_val": 55416.0,
+      "max_val": 95833.0
+    },
+    {
+      "range": "$95k - $136k",
+      "count": 3123,
+      "min_val": 95833.0,
+      "max_val": 136250.0
+    },
+    {
+      "range": "$136k - $176k",
+      "count": 3722,
+      "min_val": 136250.0,
+      "max_val": 176666.0
+    },
+    {
+      "range": "$176k - $217k",
+      "count": 2772,
+      "min_val": 176666.0,
+      "max_val": 217083.0
+    },
+    {
+      "range": "$217k - $257k",
+      "count": 2297,
+      "min_val": 217083.0,
+      "max_val": 257500.0
+    },
+    {
+      "range": "$257k - $297k",
+      "count": 1584,
+      "min_val": 257500.0,
+      "max_val": 297917.0
+    },
+    {
+      "range": "$297k - $338k",
+      "count": 970,
+      "min_val": 297917.0,
+      "max_val": 338334.0
+    },
+    {
+      "range": "$338k - $378k",
+      "count": 889,
+      "min_val": 338334.0,
+      "max_val": 378750.0
+    },
+    {
+      "range": "$378k - $419k",
+      "count": 490,
+      "min_val": 378750.0,
+      "max_val": 419167.0
+    },
+    {
+      "range": "$419k - $459k",
+      "count": 362,
+      "min_val": 419167.0,
+      "max_val": 459584.0
+    },
+    {
+      "range": "$459k - $500k",
+      "count": 1187,
+      "min_val": 459584.0,
+      "max_val": 500001.0
+    }
+  ],
+  "correlation_matrix": {
+    "MedInc": {
+      "MedInc": 1.0,
+      "HouseAge": -0.119,
+      "AveRooms": 0.327,
+      "AveBedrms": -0.062,
+      "Population": 0.005,
+      "AveOccup": 0.019,
+      "Latitude": -0.08,
+      "Longitude": -0.015,
+      "MedHouseVal": 0.688
+    },
+    "HouseAge": {
+      "MedInc": -0.119,
+      "HouseAge": 1.0,
+      "AveRooms": -0.153,
+      "AveBedrms": -0.078,
+      "Population": -0.296,
+      "AveOccup": 0.013,
+      "Latitude": 0.011,
+      "Longitude": -0.108,
+      "MedHouseVal": 0.106
+    },
+    "AveRooms": {
+      "MedInc": 0.327,
+      "HouseAge": -0.153,
+      "AveRooms": 1.0,
+      "AveBedrms": 0.848,
+      "Population": -0.072,
+      "AveOccup": -0.005,
+      "Latitude": 0.106,
+      "Longitude": -0.028,
+      "MedHouseVal": 0.152
+    },
+    "AveBedrms": {
+      "MedInc": -0.062,
+      "HouseAge": -0.078,
+      "AveRooms": 0.848,
+      "AveBedrms": 1.0,
+      "Population": -0.066,
+      "AveOccup": -0.006,
+      "Latitude": 0.07,
+      "Longitude": 0.013,
+      "MedHouseVal": -0.047
+    },
+    "Population": {
+      "MedInc": 0.005,
+      "HouseAge": -0.296,
+      "AveRooms": -0.072,
+      "AveBedrms": -0.066,
+      "Population": 1.0,
+      "AveOccup": 0.07,
+      "Latitude": -0.109,
+      "Longitude": 0.1,
+      "MedHouseVal": -0.025
+    },
+    "AveOccup": {
+      "MedInc": 0.019,
+      "HouseAge": 0.013,
+      "AveRooms": -0.005,
+      "AveBedrms": -0.006,
+      "Population": 0.07,
+      "AveOccup": 1.0,
+      "Latitude": 0.002,
+      "Longitude": 0.002,
+      "MedHouseVal": -0.024
+    },
+    "Latitude": {
+      "MedInc": -0.08,
+      "HouseAge": 0.011,
+      "AveRooms": 0.106,
+      "AveBedrms": 0.07,
+      "Population": -0.109,
+      "AveOccup": 0.002,
+      "Latitude": 1.0,
+      "Longitude": -0.925,
+      "MedHouseVal": -0.144
+    },
+    "Longitude": {
+      "MedInc": -0.015,
+      "HouseAge": -0.108,
+      "AveRooms": -0.028,
+      "AveBedrms": 0.013,
+      "Population": 0.1,
+      "AveOccup": 0.002,
+      "Latitude": -0.925,
+      "Longitude": 1.0,
+      "MedHouseVal": -0.046
+    },
+    "MedHouseVal": {
+      "MedInc": 0.688,
+      "HouseAge": 0.106,
+      "AveRooms": 0.152,
+      "AveBedrms": -0.047,
+      "Population": -0.025,
+      "AveOccup": -0.024,
+      "Latitude": -0.144,
+      "Longitude": -0.046,
+      "MedHouseVal": 1.0
+    }
+  }
+}

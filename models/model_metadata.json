@@ -1,0 +1,147 @@
+{
+  "model_name": "Hist Gradient Boosting",
+  "architecture_type": "Ensemble",
+  "training_timestamp": "2026-10-17T05:41:34.509392+00:00",
+  "random_seed": 42,
+  "dataset_name": "California Housing (1990 U.S. Census)",
+  "source": "scikit-learn.datasets.fetch_california_housing",
+  "total_samples": 20640,
+  "train_samples": 16512,
+  "test_samples": 4128,
+  "target_variable": "MedHouseVal",
+  "target_description": "Median house value for California districts / census block groups",
+  "target_multiplier": 100000.0,
+  "target_unit": "$100,000s USD",
+  "features": {
+    "MedInc": {
+      "name": "Median Income",
+      "description": "Median income in block group (in tens of thousands of USD)",
+      "unit": "$10k / year",
+      "min": 0.49,
+      "max": 15.0,
+      "default": 3.87,
+      "step": 0.1
+    },
+    "HouseAge": {
+      "name": "House Age",
+      "description": "Median house age in block group",
+      "unit": "years",
+      "min": 1.0,
+      "max": 52.0,
+      "default": 28.0,
+      "step": 1.0
+    },
+    "AveRooms": {
+      "name": "Average Rooms",
+      "description": "Average number of rooms per household in block group",
+      "unit": "rooms",
+      "min": 0.8,
+      "max": 30.0,
+      "default": 5.4,
+      "step": 0.1
+    },
+    "AveBedrms": {
+      "name": "Average Bedrooms",
+      "description": "Average number of bedrooms per household in block group",
+      "unit": "bedrooms",
+      "min": 0.3,
+      "max": 10.0,
+      "default": 1.1,
+      "step": 0.05
+    },
+    "Population": {
+      "name": "Population",
+      "description": "Total block group resident population",
+      "unit": "residents",
+      "min": 3.0,
+      "max": 35000.0,
+      "default": 1425.0,
+      "step": 10.0
+    },
+    "AveOccup": {
+      "name": "Average Occupancy",
+      "description": "Average number of household members in block group",
+      "unit": "people / household",
+      "min": 0.5,
+      "max": 20.0,
+      "default": 3.0,
+      "step": 0.1
+    },
+    "Latitude": {
+      "name": "Latitude",
+      "description": "Block group latitude coordinate",
+      "unit": "\u00b0 N",
+      "min": 32.5,
+      "max": 42.0,
+      "default": 35.6,
+      "step": 0.01
+    },
+    "Longitude": {
+      "name": "Longitude",
+      "description": "Block group longitude coordinate",
+      "unit": "\u00b0 W",
+      "min": -124.5,
+      "max": -114.0,
+      "default": -119.5,
+      "step": 0.01
+    }
+  },
+  "limitations": "1. Block-Group Level: Predictions represent the historical median home value of an entire census block group (~600 to 3,000 residents), not an individual property appraisal.\n2. 1990 U.S. Census Basis: The original dataset was derived from 1990 California census data. Dollar figures reflect 1990 valuation levels where 1.0 = $100,000.\n3. Capped Ceiling: Values exceeding $500,000 were clipped at 5.0 in the original census survey.",
+  "cv_performance": {
+    "r2_cv_mean": 0.8427,
+    "rmse_cv_mean": 0.4585,
+    "mae_cv_mean": 0.3035
+  },
+  "test_performance": {
+    "mae": 0.2988,
+    "rmse": 0.4523,
+    "r2": 0.8439,
+    "mae_usd": 29882.52,
+    "rmse_usd": 45229.38
+  },
+  "all_candidates_benchmarked": [
+    {
+      "name": "Dummy Baseline",
+      "type": "Baseline",
+      "r2_cv_mean": -0.0557,
+      "rmse_cv_mean": 1.1878,
+      "mae_cv_mean": 0.886,
+      "rmse_cv_usd": 118780.56,
+      "mae_cv_usd": 88596.59,
+      "is_selected_champion": false
+    },
+    {
+      "name": "Ridge Linear Regression",
+      "type": "Linear",
+      "r2_cv_mean": 0.558,
+      "rmse_cv_mean": 0.7643,
+      "mae_cv_mean": 0.5246,
+      "rmse_cv_usd": 76431.5,
+      "mae_cv_usd": 52457.48,
+      "is_selected_champion": false
+    },
+    {
+      "name": "Hist Gradient Boosting",
+      "type": "Ensemble",
+      "r2_cv_mean": 0.8427,
+      "rmse_cv_mean": 0.4585,
+      "mae_cv_mean": 0.3035,
+      "rmse_cv_usd": 45849.94,
+      "mae_cv_usd": 30350.8,
+      "test_r2": 0.8439,
+      "test_rmse": 0.4523,
+      "test_mae": 0.2988,
+      "is_selected_champion": true
+    },
+    {
+      "name": "Random Forest Regressor",
+      "type": "Ensemble",
+      "r2_cv_mean": 0.8171,
+      "rmse_cv_mean": 0.4944,
+      "mae_cv_mean": 0.3204,
+      "rmse_cv_usd": 49438.27,
+      "mae_cv_usd": 32044.47,
+      "is_selected_champion": false
+    }
+  ]
+}

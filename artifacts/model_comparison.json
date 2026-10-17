@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Dummy Baseline",
+    "type": "Baseline",
+    "r2_cv_mean": -0.0557,
+    "rmse_cv_mean": 1.1878,
+    "mae_cv_mean": 0.886,
+    "rmse_cv_usd": 118780.56,
+    "mae_cv_usd": 88596.59,
+    "is_selected_champion": false
+  },
+  {
+    "name": "Ridge Linear Regression",
+    "type": "Linear",
+    "r2_cv_mean": 0.558,
+    "rmse_cv_mean": 0.7643,
+    "mae_cv_mean": 0.5246,
+    "rmse_cv_usd": 76431.5,
+    "mae_cv_usd": 52457.48,
+    "is_selected_champion": false
+  },
+  {
+    "name": "Hist Gradient Boosting",
+    "type": "Ensemble",
+    "r2_cv_mean": 0.8427,
+    "rmse_cv_mean": 0.4585,
+    "mae_cv_mean": 0.3035,
+    "rmse_cv_usd": 45849.94,
+    "mae_cv_usd": 30350.8,
+    "test_r2": 0.8439,
+    "test_rmse": 0.4523,
+    "test_mae": 0.2988,
+    "is_selected_champion": true
+  },
+  {
+    "name": "Random Forest Regressor",
+    "type": "Ensemble",
+    "r2_cv_mean": 0.8171,
+    "rmse_cv_mean": 0.4944,
+    "mae_cv_mean": 0.3204,
+    "rmse_cv_usd": 49438.27,
+    "mae_cv_usd": 32044.47,
+    "is_selected_champion": false
+  }
+]

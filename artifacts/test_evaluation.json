@@ -1,0 +1,934 @@
+{
+  "model_name": "Hist Gradient Boosting",
+  "metrics": {
+    "mae": 0.2988,
+    "rmse": 0.4523,
+    "r2": 0.8439,
+    "mae_usd": 29882.52,
+    "rmse_usd": 45229.38
+  },
+  "sample_comparisons": [
+    {
+      "id": 8,
+      "actual": 340000.0,
+      "predicted": 274968.01,
+      "residual": 65031.99,
+      "abs_error": 65031.99
+    },
+    {
+      "id": 17,
+      "actual": 187500.0,
+      "predicted": 152060.48,
+      "residual": 35439.52,
+      "abs_error": 35439.52
+    },
+    {
+      "id": 33,
+      "actual": 465000.0,
+      "predicted": 391797.55,
+      "residual": 73202.45,
+      "abs_error": 73202.45
+    },
+    {
+      "id": 69,
+      "actual": 142600.0,
+      "predicted": 149977.68,
+      "residual": -7377.68,
+      "abs_error": 7377.68
+    },
+    {
+      "id": 70,
+      "actual": 85900.0,
+      "predicted": 108629.81,
+      "residual": -22729.81,
+      "abs_error": 22729.81
+    },
+    {
+      "id": 96,
+      "actual": 278600.0,
+      "predicted": 430363.49,
+      "residual": -151763.49,
+      "abs_error": 151763.49
+    },
+    {
+      "id": 109,
+      "actual": 58400.0,
+      "predicted": 79937.99,
+      "residual": -21537.99,
+      "abs_error": 21537.99
+    },
+    {
+      "id": 149,
+      "actual": 90800.0,
+      "predicted": 103010.32,
+      "residual": -12210.32,
+      "abs_error": 12210.32
+    },
+    {
+      "id": 166,
+      "actual": 120400.0,
+      "predicted": 174878.6,
+      "residual": -54478.6,
+      "abs_error": 54478.6
+    },
+    {
+      "id": 179,
+      "actual": 69000.0,
+      "predicted": 71942.27,
+      "residual": -2942.27,
+      "abs_error": 2942.27
+    },
+    {
+      "id": 184,
+      "actual": 54600.0,
+      "predicted": 53845.07,
+      "residual": 754.93,
+      "abs_error": 754.93
+    },
+    {
+      "id": 196,
+      "actual": 196700.0,
+      "predicted": 189579.55,
+      "residual": 7120.45,
+      "abs_error": 7120.45
+    },
+    {
+      "id": 205,
+      "actual": 232000.0,
+      "predicted": 265268.32,
+      "residual": -33268.32,
+      "abs_error": 33268.32
+    },
+    {
+      "id": 211,
+      "actual": 416700.0,
+      "predicted": 428611.51,
+      "residual": -11911.51,
+      "abs_error": 11911.51
+    },
+    {
+      "id": 238,
+      "actual": 120200.0,
+      "predicted": 138336.42,
+      "residual": -18136.42,
+      "abs_error": 18136.42
+    },
+    {
+      "id": 296,
+      "actual": 500001.0,
+      "predicted": 377462.3,
+      "residual": 122538.7,
+      "abs_error": 122538.7
+    },
+    {
+      "id": 308,
+      "actual": 194100.0,
+      "predicted": 220213.87,
+      "residual": -26113.87,
+      "abs_error": 26113.87
+    },
+    {
+      "id": 314,
+      "actual": 500001.0,
+      "predicted": 515902.9,
+      "residual": -15901.9,
+      "abs_error": 15901.9
+    },
+    {
+      "id": 318,
+      "actual": 163900.0,
+      "predicted": 149406.85,
+      "residual": 14493.15,
+      "abs_error": 14493.15
+    },
+    {
+      "id": 325,
+      "actual": 150000.0,
+      "predicted": 149743.82,
+      "residual": 256.18,
+      "abs_error": 256.18
+    },
+    {
+      "id": 410,
+      "actual": 95500.0,
+      "predicted": 118625.79,
+      "residual": -23125.79,
+      "abs_error": 23125.79
+    },
+    {
+      "id": 414,
+      "actual": 135700.0,
+      "predicted": 128475.53,
+      "residual": 7224.47,
+      "abs_error": 7224.47
+    },
+    {
+      "id": 438,
+      "actual": 211900.0,
+      "predicted": 225715.47,
+      "residual": -13815.47,
+      "abs_error": 13815.47
+    },
+    {
+      "id": 471,
+      "actual": 195600.0,
+      "predicted": 142972.73,
+      "residual": 52627.27,
+      "abs_error": 52627.27
+    },
+    {
+      "id": 495,
+      "actual": 64700.0,
+      "predicted": 61699.21,
+      "residual": 3000.79,
+      "abs_error": 3000.79
+    },
+    {
+      "id": 501,
+      "actual": 280400.0,
+      "predicted": 275381.99,
+      "residual": 5018.01,
+      "abs_error": 5018.01
+    },
+    {
+      "id": 511,
+      "actual": 162300.0,
+      "predicted": 189548.18,
+      "residual": -27248.18,
+      "abs_error": 27248.18
+    },
+    {
+      "id": 555,
+      "actual": 292900.0,
+      "predicted": 284328.09,
+      "residual": 8571.91,
+      "abs_error": 8571.91
+    },
+    {
+      "id": 605,
+      "actual": 207300.0,
+      "predicted": 215973.06,
+      "residual": -8673.06,
+      "abs_error": 8673.06
+    },
+    {
+      "id": 665,
+      "actual": 123600.0,
+      "predicted": 142462.66,
+      "residual": -18862.66,
+      "abs_error": 18862.66
+    },
+    {
+      "id": 718,
+      "actual": 376600.0,
+      "predicted": 306628.48,
+      "residual": 69971.52,
+      "abs_error": 69971.52
+    },
+    {
+      "id": 744,
+      "actual": 165200.0,
+      "predicted": 170864.46,
+      "residual": -5664.46,
+      "abs_error": 5664.46
+    },
+    {
+      "id": 798,
+      "actual": 364900.0,
+      "predicted": 371226.55,
+      "residual": -6326.55,
+      "abs_error": 6326.55
+    },
+    {
+      "id": 838,
+      "actual": 165500.0,
+      "predicted": 184819.05,
+      "residual": -19319.05,
+      "abs_error": 19319.05
+    },
+    {
+      "id": 869,
+      "actual": 330700.0,
+      "predicted": 395507.58,
+      "residual": -64807.58,
+      "abs_error": 64807.58
+    },
+    {
+      "id": 949,
+      "actual": 238500.0,
+      "predicted": 289353.34,
+      "residual": -50853.34,
+      "abs_error": 50853.34
+    },
+    {
+      "id": 978,
+      "actual": 88500.0,
+      "predicted": 107020.16,
+      "residual": -18520.16,
+      "abs_error": 18520.16
+    },
+    {
+      "id": 1006,
+      "actual": 154200.0,
+      "predicted": 178936.73,
+      "residual": -24736.73,
+      "abs_error": 24736.73
+    },
+    {
+      "id": 1034,
+      "actual": 159300.0,
+      "predicted": 137396.34,
+      "residual": 21903.66,
+      "abs_error": 21903.66
+    },
+    {
+      "id": 1057,
+      "actual": 447300.0,
+      "predicted": 440938.89,
+      "residual": 6361.11,
+      "abs_error": 6361.11
+    },
+    {
+      "id": 1064,
+      "actual": 98200.0,
+      "predicted": 113819.11,
+      "residual": -15619.11,
+      "abs_error": 15619.11
+    },
+    {
+      "id": 1071,
+      "actual": 101600.0,
+      "predicted": 94399.94,
+      "residual": 7200.06,
+      "abs_error": 7200.06
+    },
+    {
+      "id": 1084,
+      "actual": 166300.0,
+      "predicted": 180596.34,
+      "residual": -14296.34,
+      "abs_error": 14296.34
+    },
+    {
+      "id": 1113,
+      "actual": 230700.0,
+      "predicted": 238936.96,
+      "residual": -8236.96,
+      "abs_error": 8236.96
+    },
+    {
+      "id": 1138,
+      "actual": 500001.0,
+      "predicted": 303850.25,
+      "residual": 196150.75,
+      "abs_error": 196150.75
+    },
+    {
+      "id": 1204,
+      "actual": 500001.0,
+      "predicted": 511454.38,
+      "residual": -11453.38,
+      "abs_error": 11453.38
+    },
+    {
+      "id": 1210,
+      "actual": 245100.0,
+      "predicted": 234990.23,
+      "residual": 10109.77,
+      "abs_error": 10109.77
+    },
+    {
+      "id": 1321,
+      "actual": 439000.0,
+      "predicted": 352315.92,
+      "residual": 86684.08,
+      "abs_error": 86684.08
+    },
+    {
+      "id": 1344,
+      "actual": 236900.0,
+      "predicted": 247509.03,
+      "residual": -10609.03,
+      "abs_error": 10609.03
+    },
+    {
+      "id": 1424,
+      "actual": 187500.0,
+      "predicted": 180969.84,
+      "residual": 6530.16,
+      "abs_error": 6530.16
+    },
+    {
+      "id": 1461,
+      "actual": 328200.0,
+      "predicted": 286820.25,
+      "residual": 41379.75,
+      "abs_error": 41379.75
+    },
+    {
+      "id": 1480,
+      "actual": 68900.0,
+      "predicted": 78374.1,
+      "residual": -9474.1,
+      "abs_error": 9474.1
+    },
+    {
+      "id": 1497,
+      "actual": 98200.0,
+      "predicted": 100967.65,
+      "residual": -2767.65,
+      "abs_error": 2767.65
+    },
+    {
+      "id": 1509,
+      "actual": 60000.0,
+      "predicted": 216095.31,
+      "residual": -156095.31,
+      "abs_error": 156095.31
+    },
+    {
+      "id": 1532,
+      "actual": 144300.0,
+      "predicted": 165167.49,
+      "residual": -20867.49,
+      "abs_error": 20867.49
+    },
+    {
+      "id": 1592,
+      "actual": 362100.0,
+      "predicted": 352494.39,
+      "residual": 9605.61,
+      "abs_error": 9605.61
+    },
+    {
+      "id": 1600,
+      "actual": 322900.0,
+      "predicted": 404918.17,
+      "residual": -82018.17,
+      "abs_error": 82018.17
+    },
+    {
+      "id": 1621,
+      "actual": 91700.0,
+      "predicted": 65759.58,
+      "residual": 25940.42,
+      "abs_error": 25940.42
+    },
+    {
+      "id": 1638,
+      "actual": 225000.0,
+      "predicted": 224049.03,
+      "residual": 950.97,
+      "abs_error": 950.97
+    },
+    {
+      "id": 1689,
+      "actual": 483800.0,
+      "predicted": 453530.26,
+      "residual": 30269.74,
+      "abs_error": 30269.74
+    },
+    {
+      "id": 1746,
+      "actual": 500001.0,
+      "predicted": 508006.67,
+      "residual": -8005.67,
+      "abs_error": 8005.67
+    },
+    {
+      "id": 1752,
+      "actual": 283200.0,
+      "predicted": 313217.71,
+      "residual": -30017.71,
+      "abs_error": 30017.71
+    },
+    {
+      "id": 1769,
+      "actual": 193200.0,
+      "predicted": 230275.13,
+      "residual": -37075.13,
+      "abs_error": 37075.13
+    },
+    {
+      "id": 1862,
+      "actual": 238100.0,
+      "predicted": 259553.75,
+      "residual": -21453.75,
+      "abs_error": 21453.75
+    },
+    {
+      "id": 1873,
+      "actual": 213200.0,
+      "predicted": 232920.48,
+      "residual": -19720.48,
+      "abs_error": 19720.48
+    },
+    {
+      "id": 1936,
+      "actual": 225000.0,
+      "predicted": 137586.22,
+      "residual": 87413.78,
+      "abs_error": 87413.78
+    },
+    {
+      "id": 1988,
+      "actual": 145700.0,
+      "predicted": 166091.71,
+      "residual": -20391.71,
+      "abs_error": 20391.71
+    },
+    {
+      "id": 2023,
+      "actual": 205900.0,
+      "predicted": 187608.1,
+      "residual": 18291.9,
+      "abs_error": 18291.9
+    },
+    {
+      "id": 2025,
+      "actual": 162500.0,
+      "predicted": 176550.65,
+      "residual": -14050.65,
+      "abs_error": 14050.65
+    },
+    {
+      "id": 2080,
+      "actual": 95200.0,
+      "predicted": 111555.72,
+      "residual": -16355.72,
+      "abs_error": 16355.72
+    },
+    {
+      "id": 2097,
+      "actual": 391300.0,
+      "predicted": 286751.27,
+      "residual": 104548.73,
+      "abs_error": 104548.73
+    },
+    {
+      "id": 2118,
+      "actual": 339100.0,
+      "predicted": 226664.72,
+      "residual": 112435.28,
+      "abs_error": 112435.28
+    },
+    {
+      "id": 2131,
+      "actual": 178300.0,
+      "predicted": 188563.7,
+      "residual": -10263.7,
+      "abs_error": 10263.7
+    },
+    {
+      "id": 2144,
+      "actual": 173400.0,
+      "predicted": 167953.6,
+      "residual": 5446.4,
+      "abs_error": 5446.4
+    },
+    {
+      "id": 2185,
+      "actual": 314100.0,
+      "predicted": 165781.71,
+      "residual": 148318.29,
+      "abs_error": 148318.29
+    },
+    {
+      "id": 2206,
+      "actual": 158500.0,
+      "predicted": 181060.14,
+      "residual": -22560.14,
+      "abs_error": 22560.14
+    },
+    {
+      "id": 2232,
+      "actual": 266700.0,
+      "predicted": 308876.76,
+      "residual": -42176.76,
+      "abs_error": 42176.76
+    },
+    {
+      "id": 2251,
+      "actual": 215000.0,
+      "predicted": 200018.69,
+      "residual": 14981.31,
+      "abs_error": 14981.31
+    },
+    {
+      "id": 2288,
+      "actual": 383300.0,
+      "predicted": 365754.45,
+      "residual": 17545.55,
+      "abs_error": 17545.55
+    },
+    {
+      "id": 2295,
+      "actual": 324800.0,
+      "predicted": 378855.14,
+      "residual": -54055.14,
+      "abs_error": 54055.14
+    },
+    {
+      "id": 2302,
+      "actual": 157900.0,
+      "predicted": 195439.7,
+      "residual": -37539.7,
+      "abs_error": 37539.7
+    },
+    {
+      "id": 2330,
+      "actual": 300300.0,
+      "predicted": 285012.69,
+      "residual": 15287.31,
+      "abs_error": 15287.31
+    },
+    {
+      "id": 2553,
+      "actual": 64100.0,
+      "predicted": 84603.46,
+      "residual": -20503.46,
+      "abs_error": 20503.46
+    },
+    {
+      "id": 2654,
+      "actual": 312000.0,
+      "predicted": 310217.9,
+      "residual": 1782.1,
+      "abs_error": 1782.1
+    },
+    {
+      "id": 2663,
+      "actual": 500001.0,
+      "predicted": 455902.52,
+      "residual": 44098.48,
+      "abs_error": 44098.48
+    },
+    {
+      "id": 2704,
+      "actual": 307400.0,
+      "predicted": 279605.92,
+      "residual": 27794.08,
+      "abs_error": 27794.08
+    },
+    {
+      "id": 2728,
+      "actual": 186100.0,
+      "predicted": 230674.16,
+      "residual": -44574.16,
+      "abs_error": 44574.16
+    },
+    {
+      "id": 2751,
+      "actual": 386200.0,
+      "predicted": 286123.95,
+      "residual": 100076.05,
+      "abs_error": 100076.05
+    },
+    {
+      "id": 2864,
+      "actual": 147100.0,
+      "predicted": 143250.93,
+      "residual": 3849.07,
+      "abs_error": 3849.07
+    },
+    {
+      "id": 2877,
+      "actual": 65000.0,
+      "predicted": 81423.13,
+      "residual": -16423.13,
+      "abs_error": 16423.13
+    },
+    {
+      "id": 2879,
+      "actual": 168800.0,
+      "predicted": 197449.39,
+      "residual": -28649.39,
+      "abs_error": 28649.39
+    },
+    {
+      "id": 2893,
+      "actual": 175000.0,
+      "predicted": 249183.3,
+      "residual": -74183.3,
+      "abs_error": 74183.3
+    },
+    {
+      "id": 2989,
+      "actual": 112500.0,
+      "predicted": 118491.6,
+      "residual": -5991.6,
+      "abs_error": 5991.6
+    },
+    {
+      "id": 3081,
+      "actual": 500001.0,
+      "predicted": 477764.98,
+      "residual": 22236.02,
+      "abs_error": 22236.02
+    },
+    {
+      "id": 3100,
+      "actual": 222300.0,
+      "predicted": 169602.0,
+      "residual": 52698.0,
+      "abs_error": 52698.0
+    },
+    {
+      "id": 3115,
+      "actual": 122100.0,
+      "predicted": 127960.83,
+      "residual": -5860.83,
+      "abs_error": 5860.83
+    },
+    {
+      "id": 3168,
+      "actual": 329700.0,
+      "predicted": 184161.7,
+      "residual": 145538.3,
+      "abs_error": 145538.3
+    },
+    {
+      "id": 3174,
+      "actual": 234600.0,
+      "predicted": 248785.32,
+      "residual": -14185.32,
+      "abs_error": 14185.32
+    },
+    {
+      "id": 3207,
+      "actual": 438100.0,
+      "predicted": 418015.1,
+      "residual": 20084.9,
+      "abs_error": 20084.9
+    },
+    {
+      "id": 3297,
+      "actual": 218200.0,
+      "predicted": 216906.8,
+      "residual": 1293.2,
+      "abs_error": 1293.2
+    },
+    {
+      "id": 3299,
+      "actual": 81300.0,
+      "predicted": 103732.56,
+      "residual": -22432.56,
+      "abs_error": 22432.56
+    },
+    {
+      "id": 3388,
+      "actual": 245000.0,
+      "predicted": 170855.6,
+      "residual": 74144.4,
+      "abs_error": 74144.4
+    },
+    {
+      "id": 3399,
+      "actual": 335000.0,
+      "predicted": 357510.69,
+      "residual": -22510.69,
+      "abs_error": 22510.69
+    },
+    {
+      "id": 3455,
+      "actual": 335000.0,
+      "predicted": 268977.81,
+      "residual": 66022.19,
+      "abs_error": 66022.19
+    },
+    {
+      "id": 3531,
+      "actual": 93800.0,
+      "predicted": 82653.8,
+      "residual": 11146.2,
+      "abs_error": 11146.2
+    },
+    {
+      "id": 3550,
+      "actual": 177300.0,
+      "predicted": 148874.27,
+      "residual": 28425.73,
+      "abs_error": 28425.73
+    },
+    {
+      "id": 3573,
+      "actual": 175200.0,
+      "predicted": 177662.06,
+      "residual": -2462.06,
+      "abs_error": 2462.06
+    },
+    {
+      "id": 3629,
+      "actual": 149300.0,
+      "predicted": 138518.25,
+      "residual": 10781.75,
+      "abs_error": 10781.75
+    },
+    {
+      "id": 3647,
+      "actual": 106300.0,
+      "predicted": 95633.38,
+      "residual": 10666.62,
+      "abs_error": 10666.62
+    },
+    {
+      "id": 3662,
+      "actual": 162500.0,
+      "predicted": 140380.84,
+      "residual": 22119.16,
+      "abs_error": 22119.16
+    },
+    {
+      "id": 3676,
+      "actual": 189900.0,
+      "predicted": 224281.58,
+      "residual": -34381.58,
+      "abs_error": 34381.58
+    },
+    {
+      "id": 3786,
+      "actual": 225800.0,
+      "predicted": 208145.4,
+      "residual": 17654.6,
+      "abs_error": 17654.6
+    },
+    {
+      "id": 3872,
+      "actual": 111800.0,
+      "predicted": 130826.1,
+      "residual": -19026.1,
+      "abs_error": 19026.1
+    },
+    {
+      "id": 3873,
+      "actual": 194100.0,
+      "predicted": 180731.69,
+      "residual": 13368.31,
+      "abs_error": 13368.31
+    },
+    {
+      "id": 3927,
+      "actual": 357900.0,
+      "predicted": 338680.46,
+      "residual": 19219.54,
+      "abs_error": 19219.54
+    },
+    {
+      "id": 3988,
+      "actual": 209600.0,
+      "predicted": 246491.94,
+      "residual": -36891.94,
+      "abs_error": 36891.94
+    },
+    {
+      "id": 4009,
+      "actual": 64800.0,
+      "predicted": 91995.13,
+      "residual": -27195.13,
+      "abs_error": 27195.13
+    },
+    {
+      "id": 4050,
+      "actual": 196300.0,
+      "predicted": 179537.94,
+      "residual": 16762.06,
+      "abs_error": 16762.06
+    },
+    {
+      "id": 4108,
+      "actual": 120500.0,
+      "predicted": 117159.89,
+      "residual": 3340.11,
+      "abs_error": 3340.11
+    },
+    {
+      "id": 4110,
+      "actual": 455300.0,
+      "predicted": 429121.22,
+      "residual": 26178.78,
+      "abs_error": 26178.78
+    }
+  ],
+  "residual_distribution": [
+    {
+      "range": "$-264k to $-228k",
+      "count": 2,
+      "bin_center": -245611.0
+    },
+    {
+      "range": "$-228k to $-191k",
+      "count": 3,
+      "bin_center": -208894.0
+    },
+    {
+      "range": "$-191k to $-154k",
+      "count": 7,
+      "bin_center": -172177.0
+    },
+    {
+      "range": "$-154k to $-118k",
+      "count": 18,
+      "bin_center": -135460.0
+    },
+    {
+      "range": "$-118k to $-81k",
+      "count": 73,
+      "bin_center": -98744.0
+    },
+    {
+      "range": "$-81k to $-44k",
+      "count": 298,
+      "bin_center": -62027.0
+    },
+    {
+      "range": "$-44k to $-7k",
+      "count": 1507,
+      "bin_center": -25310.0
+    },
+    {
+      "range": "$-7k to $29k",
+      "count": 1570,
+      "bin_center": 11406.0
+    },
+    {
+      "range": "$29k to $66k",
+      "count": 387,
+      "bin_center": 48123.0
+    },
+    {
+      "range": "$66k to $103k",
+      "count": 137,
+      "bin_center": 84840.0
+    },
+    {
+      "range": "$103k to $139k",
+      "count": 58,
+      "bin_center": 121557.0
+    },
+    {
+      "range": "$139k to $176k",
+      "count": 42,
+      "bin_center": 158273.0
+    },
+    {
+      "range": "$176k to $213k",
+      "count": 15,
+      "bin_center": 194990.0
+    },
+    {
+      "range": "$213k to $250k",
+      "count": 4,
+      "bin_center": 231707.0
+    },
+    {
+      "range": "$250k to $286k",
+      "count": 5,
+      "bin_center": 268423.0
+    },
+    {
+      "range": "$286k to $323k",
+      "count": 2,
+      "bin_center": 305140.0
+    }
+  ]
+}
